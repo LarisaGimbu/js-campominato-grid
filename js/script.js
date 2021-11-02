@@ -4,6 +4,8 @@ const container = document.getElementById('main-container');
 btnPlay.addEventListener('click', function(){
   const level = document.getElementById('level').value;
   let squareNumber = 0;
+  container.innerHTML =''; 
+  
 
   if(level === '1'){
     squareNumber = 100;
@@ -17,7 +19,7 @@ btnPlay.addEventListener('click', function(){
 
   for(let i = 0; i < squareNumber; i++){
     //creo l'elemento square e lo aggiungo al main-container con dentro un numero da q a squareNumber
-    const sq = createSquare(container);
+    sq = createSquare(container);
     sq.innerHTML = i + 1;
 
     sq.addEventListener('click', function(){
