@@ -40,7 +40,7 @@ main{
   height: calc(100vh - 140px);
   background-color: #7FFFD4;
 }
-.main-container{
+#main-container{
   width: 400px;
   height: 400px;
 }
